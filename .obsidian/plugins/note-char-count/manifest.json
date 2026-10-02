@@ -1,0 +1,9 @@
+{
+	"id": "note-char-count",
+	"name": "Note Char Count",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "统计全库所有笔记的字符总数，支持中文/英文/行数分类统计、状态栏常驻显示与单篇排行。",
+	"author": "Claudian",
+	"isDesktopOnly": false
+}

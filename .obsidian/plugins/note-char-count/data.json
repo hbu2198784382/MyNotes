@@ -1,0 +1,7 @@
+{
+  "excludeFolders": "Excalidraw\nsrc\nDailyNotes",
+  "includeFrontmatter": false,
+  "countCodeBlocks": true,
+  "showStatusBar": true,
+  "topN": 10
+}

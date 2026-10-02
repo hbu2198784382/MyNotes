@@ -1,0 +1,31 @@
+# ============================================================
+#  笔记自身（*.md）全部入库，以下只排除"非笔记"的重型内容
+# ============================================================
+
+# ---------- 大体积媒体 ----------
+# 视频：git 会永久保存二进制的每一个历史版本，重编码一次仓库就翻一倍。
+# 你这个库里 6 个 mp4 共 53MB，占全库 76%，必须排除。
+# 如果笔记里的视频必须跟着走，改用 Git LFS：git lfs track "*.mp4"
+*.mp4
+
+# ---------- Obsidian 插件与主题 ----------
+# 插件包含 18.9MB 的打包产物，且每次升级都会产生新版本，不适合入 git。
+# 它们都能从插件市场重装。
+.obsidian/plugins/*
+# 例外：自建的 note-char-count 不在插件市场，重装不回来，必须保留
+!.obsidian/plugins/note-char-count/
+.obsidian/themes/*
+
+# ---------- Obsidian 本机专属文件与缓存 ----------
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/.trash/
+
+# ---------- Claudian 工具缓存 ----------
+.claudian/
+
+# ---------- 系统文件 ----------
+.DS_Store
+Thumbs.db
+desktop.ini

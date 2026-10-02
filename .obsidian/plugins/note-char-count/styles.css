@@ -1,0 +1,108 @@
+/* Note Char Count — 统计面板样式 */
+
+.ncc-statusbar {
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.ncc-statusbar.ncc-hidden {
+	display: none;
+}
+
+.ncc-modal {
+	min-width: min(680px, 90vw);
+}
+
+.ncc-sub {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	margin-bottom: 1em;
+}
+
+/* 指标卡片 */
+.ncc-summary {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	gap: 8px;
+	margin-bottom: 1.25em;
+}
+
+.ncc-tile {
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	padding: 10px 12px;
+}
+
+.ncc-tile-label {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	margin-bottom: 4px;
+}
+
+.ncc-tile-value {
+	font-size: 1.25em;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-normal);
+}
+
+.ncc-note {
+	grid-column: 1 / -1;
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+}
+
+/* 排行榜表格 */
+.ncc-table table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: var(--font-ui-small);
+}
+
+.ncc-table th {
+	text-align: left;
+	color: var(--text-muted);
+	font-weight: 500;
+	border-bottom: 1px solid var(--background-modifier-border);
+	padding: 6px 8px;
+}
+
+.ncc-table td {
+	padding: 6px 8px;
+	border-bottom: 1px solid var(--background-modifier-border-hover);
+	vertical-align: top;
+}
+
+.ncc-table tbody tr:hover {
+	background: var(--background-secondary-alt);
+}
+
+.ncc-num {
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.ncc-link {
+	cursor: pointer;
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.ncc-link:hover {
+	text-decoration: underline;
+}
+
+.ncc-path {
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+	margin-top: 2px;
+	word-break: break-all;
+}
+
+.ncc-footer {
+	margin-top: 1.25em;
+	display: flex;
+	justify-content: flex-end;
+}
